@@ -82,3 +82,27 @@
  	* ['a'..'z']
 * You can technically use floating points in ranges, but don't because floating point errors.
 * More functions in functions.md
+## List Comprehensions
+* A way of generating complex lists
+* Syntax:
+ * `[function | x <- list, predicate]`
+* The function is applied to the list where x is the current value in the list
+* The predicate filters the list before it gets passed to the function
+  * The predicate is basically a function for `filter`, a -> Bool
+* There can be multiple predicates
+* There can be multiple lists, i.e.
+ * `[x*y|x<-[0..],y<-[2..]]`
+* It is convention to use an `_` character when you don't use the element in your function
+ * This is also the case for function declarations
+## Tuples
+* Tuples are like lists, they contain sets of data
+* Syntax for tuple literals
+ * `(x, y, z)`
+* They can be of any length, but they and their lengths are immutable after instantiation
+* They can contain mixed types, i.e:
+ * `("String",'c',3,4.3)`
+* Each tuple is its own type, for example the type of the above example is:
+ * `([Char],Char,Int,Float)`
+* Tuples can go inside lists
+* Lists can go inside tuples
+* While there are singleton lists, `[1]`, there are no singleton tuples

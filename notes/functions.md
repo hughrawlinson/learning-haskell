@@ -74,6 +74,15 @@ Here's a list of the functions we encounter. They're all prefix functions unless
 * `replicate`
  * repeats a singleton n times
 
+## Tuples
+* `fst`
+ * takes the first element in a tuple
+* `snd`
+ * takes the second element in a tuple
+* `zip`
+ * takes two lists and produces a list of tuple pairs
+ * Truncates to the shorter list
+
 ## Numeric
 * `min`
  * min :: Ord a => a -> a -> a
