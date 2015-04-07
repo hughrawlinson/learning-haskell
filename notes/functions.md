@@ -65,6 +65,7 @@ Here's a list of the functions we encounter. They're all prefix functions unless
  * returns the result of multiplying all the numbers in a list together`
 * `elem`
  * checks if a given element is in the list
+
 ## Ranges
 * `cycle`
  * takes a list, and cycles it into an infinite list
@@ -72,6 +73,7 @@ Here's a list of the functions we encounter. They're all prefix functions unless
  * repeats a singleton infinitely
 * `replicate`
  * repeats a singleton n times
+
 ## Numeric
 * `min`
  * min :: Ord a => a -> a -> a

@@ -1,13 +1,17 @@
 # Starting Out
+
 ## Ready Set Go
+
 ### Repl Commands
 * Command for Haskell repl is `ghci`.
 * Set ghci prompt with `:set prompt "<prompt string>"`
+
 ### Simple Arithmetic
 * works as expected (+ - * /)
 * infix operators
 * precedence is as in mathematical notation, including parentheses
 * negative numbers must be surrounded by parentheses
+
 ### Boolean Algebra
 * Operators
  * `&&` = AND
@@ -16,14 +20,18 @@
 * Testing for equality
  * `==` = equals
  * `/=` = not equal
+
 ### Type System
 * Strict typing
  * No type coercion (except ints to floats, but not floats to ints)
+
 ## Baby's First Functions
+
 ### Functions
 * are usually prefix, i.e. \[function\] \[arg\], but can be infix, i.e. \[arg1\] \[function\] \[arg2\].
 * I'm going to keep a list of functions we encounter in another file, functions.md.
 * You can't start function names with a capital letter, that's reserved for typeclasses
+
 #### Defining
 * In files, they are just written:
  * `doubleMe x = x + x`
@@ -33,17 +41,20 @@
 * GHC can usually infer the type signature of functions
 * Sometimes you have to specify the type signature
 * _To load a file in ghci, type `:l [filename.hs]` inside the repl_
+
 ### Conditionals
 * Haskell supports `if`, `then`, and `else`.
  * If is actually an expression, so it must return something.
  * Because of this, it has to have an `else`.
  * Syntax is:
   * `if [condition] then [true block] else [false block]`
+
 ### Prime
 * The apostrophe character (`'`), read as "prime", denotes a strict version of a function
 * or a slightly modified version of a function or variable.
 * the `'` character is a valid character in functions
  * Therefore, `danielO'Donnel = "idiot"`
+
 ## An intro to lists
 * List literals are written with the following common syntax:
  * `[4,8,16,32,64,128,256]`
@@ -60,6 +71,7 @@
  * `!!` returns the value at the nth index of a list
 * Because of lazy evaluation, lists can be of infinite length
 * more functions in functions.md
+
 ## Texas Ranges
 * Instead of writing `[1,2,3,4,5]`, write `[1..5]`
 * Infinite lists can be written as `[0..]`
