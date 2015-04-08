@@ -25,7 +25,9 @@ Here's a list of the functions we encounter. They're all prefix functions unless
 ## For List-ish Types
 * `succ`
  * succ :: Enum a => a -> a
- * Gets the next element of an enumerable type
+ * Gets the next element (successor) of an enumerable type
+* `pred`
+ * gets the previous element (predecessor) of an enumerable type.
 * `:` cons operator (infix)
  * concatenation operator
  * no type signature in GHCI, but essentially
@@ -89,3 +91,9 @@ Here's a list of the functions we encounter. They're all prefix functions unless
  * returns the smaller of its two arguments
 * `max`
  * returns the larger of its two arguments
+* `fromIntegral`
+ * Converts an expression in the typeclass `Floating` into a member of the `Num` typeclass
+
+## Misc
+* `error`
+ * returns an error named with the string you passed it, crashes runtime unless you catch it
