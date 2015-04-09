@@ -49,4 +49,24 @@ __Aside: Notes can be defined as well as called as infix using backticks. Someti
 		      anotherParam = mod x 89
 	 ```
  * As you can see, multiple definitions using `where` are possible
-* Where can be used in conjunction with guards
+* `where` can be used in conjunction with guards
+* `where` can use pattern matching
+* `where` can define functions that take arguments
+* `where` can be nested, because hooray readability...
+* You can't use `where` on the global scope. Why? I don't know. Nobody mentioned this in the tutorial, I got very frustrated finding it out for myself.
+## Let it be
+* `let` is similar to where, in that you define functions in the scope of another function
+* `let` has the following syntax
+ * `let [bindings] in [expression]`
+* All the bindings (i.e. function bindings) are visible inside but not outside of the expression in the `in` section
+* You can have multiple bindings
+* `let` is an expression, so it returns the value from the `in` expression
+* if you're binding several variables inline, you can't use columns to seperate them, so use semicolons
+ * `(let a = 100;b=200 in a\*b in a\*b\*c)`
+ * You don't have to put a semicolon after the last one, but you can if you like
+* You can use let inside list comprehensions
+* Let bindings are local in scope, so we can't use them across guards. That's why we've got `where`.
+
+## Case expressions
+* The equivalent of switch in most imperative language, but the author insufferably says it in a way that implies \#HaskellMasterRace
+* 
