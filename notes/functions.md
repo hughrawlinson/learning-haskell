@@ -97,3 +97,10 @@ Here's a list of the functions we encounter. They're all prefix functions unless
 ## Misc
 * `error`
  * returns an error named with the string you passed it, crashes runtime unless you catch it
+
+## For Higher Order Functions
+* `flip`
+ * takes a function with two parameters, returns the same function with the order of the arguments reversed
+* `zipWith`
+ * Takes two lists, makes them into one list by passing them both through a function
+ * `zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
