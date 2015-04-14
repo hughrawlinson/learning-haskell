@@ -13,10 +13,22 @@ Functions can *be* parameters and return types. You can pass functions around, l
  * `10 / 5` is the same as `(/5) 10`
 
 ## Some higher-orderism is in order
-
+* You can pass functions as parameters into other functions
+ * Remember to use parens in type signatures as otherwise everything is right associative.
+  * Except when you're using infix operators
+   * Except on the third Tuesday in November
+    * You don't have to use parens when a function is returning a function be 
+* Functions can return other functions (for partial application and other purposes)
+* Functions are "things" of type
 ## Maps and filters
+* Map is pretty simple, it runs through a list applying a function to each of the values, and returns the resulting list.
+* Filter filters your list using a predicate function (a -> Bool)
+* takeWhile runs through a list until your function returns false, then stops.
 
 ## Lambdas
+* Anonymous functions. Hooray.
+* Specified like `(\x -> x ++ "!")` or whatever
+
 
 ## Only folds and horses
 
