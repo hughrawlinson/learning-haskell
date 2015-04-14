@@ -1,4 +1,4 @@
-# Angry
+# Not A Fan
 Parts of the Haskell learning curve are very __very__ frustrating. I've decided to document these in the hopes that when people write tutorials they can attempt to mitigate these frustrations. In all honesty, learning haskell is so frustrating that at one point I closed my computer, threw my monitor off my desk, and (I'm somewhat ashamed to admit this), started crying.
 
 If your response to this is that "Hugh are stupid", I am not interested in your input.

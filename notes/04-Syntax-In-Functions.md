@@ -69,4 +69,12 @@ __Aside: Notes can be defined as well as called as infix using backticks. Someti
 
 ## Case expressions
 * The equivalent of switch in most imperative language, but the author insufferably says it in a way that implies \#HaskellMasterRace
-* 
+* They're like switch in most languages, but with pattern matching on the result of an expression.
+* Example Time:
+```haskell
+case ("z",4) of ("z",_) -> "The first thing was a string containing \"z\""
+                (_,_,_) -> "Tuple was a triple"
+```
+* The expression is matched against the patterns, and the first pattern that matches the expression is used.
+* If no match is found, a runtime error occurs
+* Whereas pattern matching on function parameters can only be used on function definitions, case expressions can be used "pretty much" anywhere.
