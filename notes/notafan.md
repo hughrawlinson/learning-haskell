@@ -19,6 +19,7 @@ multipleOfFive a
   | a `mod` 5 == 0 = True
   | otherwise = False
 ```
+* `foldl (\acc x -> acc + x) 0 take 100 [0..]`: Apparently in this case you have to make this a function after defining the type signature. WHY?! Why the fuck can GHCI not just fucking evaluate this fucking expression.
 
 Generally, dripfeeding me information doesn't really work for me. I realise that's part of my learning style and not a universal problem, but it definitely contributed to my problem. It feels like my middle school science teacher when he said "Oxygen and Hydrogen bond to form wa ... [silence] ...ter". Not "form ... water", form wa...ter".
 

@@ -104,3 +104,6 @@ Here's a list of the functions we encounter. They're all prefix functions unless
 * `zipWith`
  * Takes two lists, makes them into one list by passing them both through a function
  * `zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+* `foldl`
+ * like reduce I guess.
+ * like map, but reduces the list to a single value.

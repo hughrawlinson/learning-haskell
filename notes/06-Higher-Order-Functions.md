@@ -28,9 +28,18 @@ Functions can *be* parameters and return types. You can pass functions around, l
 ## Lambdas
 * Anonymous functions. Hooray.
 * Specified like `(\x -> x ++ "!")` or whatever
-
+* Used where you only want a function once.
+* Arguments in lambdas can do pattern matching, i.e. `(\[x:xs] -> x : xs)` (super useful function for useful functioning.
 
 ## Only folds and horses
+* Folds are for dealing with the 'edge case' pattern in recursive functions.
+* They're like map, except that they reduce the list into a single value.
+* `foldl` folds the list from the left side. `foldr` folds the list from the right side.
+* `foldl` takes a function that takes two arguments, an 'accumulator' (not official name?) and a value for the current position in the list.
+* Implementing `sum` with `foldl` would look something like...
+ * `foldl (\acc x -> acc + x) 0 [0..100]`
+
+
 
 ## Function application with $
 
